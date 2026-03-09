@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SKS Style</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f4f4f4;
+}
+
+/* Header */
+
+header{
+background:black;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+/* Navbar */
+
+nav{
+background:#333;
+display:flex;
+justify-content:center;
+}
+
+nav a{
+color:white;
+padding:14px 20px;
+text-decoration:none;
+}
+
+nav a:hover{
+background:#555;
+}
+
+/* Hero */
+
+.hero{
+background:url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b') center/cover;
+height:350px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-shadow:2px 2px 5px black;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero button{
+padding:10px 20px;
+border:none;
+background:gold;
+cursor:pointer;
+font-size:16px;
+}
+
+/* Products */
+
+.products{
+padding:40px;
+text-align:center;
+}
+
+.product-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+width:200px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.card button{
+margin-top:10px;
+background:green;
+color:white;
+border:none;
+padding:8px 15px;
+cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>SKS Style</h1>
+<p>Wear Your Attitude</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<h1>New Fashion Collection</h1>
+<button>Shop Now</button>
+</section>
+
+<section class="products" id="products">
+
+<h2>Our Products</h2>
+
+<div class="product-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+<h3>T-Shirt</h3>
+<p>₹499</p>
+<button onclick="order()">Order</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c">
+<h3>Hoodie</h3>
+<p>₹999</p>
+<button onclick="order()">Order</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1495121605193-b116b5b09a4b">
+<h3>Jacket</h3>
+<p>₹1499</p>
+<button onclick="order()">Order</button>
+</div>
+
+</div>
+
+</section>
+
+<footer id="contact">
+<p>Contact on WhatsApp: 9876543210</p>
+<p>© 2026 SKS Style</p>
+</footer>
+
+<script>
+
+function order(){
+window.open("https://wa.me/919876543210");
+}
+
+</script>
+
+</body>
+</html>
